@@ -27,3 +27,7 @@ support SAML and OIDC, with Okta and Azure AD as the first launch partners.
 
 Partner integration with HelloFresh and Blue Apron: order all ingredients for
 any recipe as a meal kit, delivered weekly on a subscription.
+
+## Single sign-on
+
+Corporate users will authenticate via SAML SSO through their identity provider.
