@@ -17,3 +17,8 @@ http://localhost:3000.
 
 Open a PR — every change to this file is reviewed by SpecGuard against the
 locked project scope in `.specguard/lock.json`.
+
+## SSO integration
+
+Enterprise users can sign in through their company identity provider. We will
+support SAML and OIDC, with Okta and Azure AD as the first launch partners.
