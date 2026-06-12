@@ -1,0 +1,6 @@
+watch:
+  - "README.md"
+  - ".specguard/**"
+block_threshold: 0.75
+on_error: warn
+model: claude-sonnet-4-6

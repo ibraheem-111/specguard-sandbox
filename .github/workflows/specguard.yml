@@ -1,0 +1,29 @@
+name: specguard
+
+on:
+  pull_request:
+  pull_request_review:        # approval re-evaluation — required for enforce mode
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  specguard:                  # job name = the required-check name for branch protection
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # required: base...head history
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Installing from the feature branch until the action is on PyPI (T038);
+      # then this becomes: uses: Sawaiz-zip/spec-guard@v0
+      - name: Install specguard
+        run: pip install --quiet "git+https://github.com/Sawaiz-zip/spec-guard.git@001-pr-spec-gate"
+      - name: Run SpecGuard
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m specguard.ci

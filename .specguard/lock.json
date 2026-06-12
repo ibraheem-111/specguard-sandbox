@@ -1,0 +1,16 @@
+{
+  "goal": "A web application for storing and sharing personal cooking recipes",
+  "scope_in": [
+    "recipe creation and editing",
+    "ingredient lists and step-by-step instructions",
+    "recipe search and tags",
+    "photo uploads"
+  ],
+  "scope_out": [
+    "SSO",
+    "billing or subscriptions",
+    "meal-kit delivery integration"
+  ],
+  "locked_at": "2026-06-11T00:00:00Z",
+  "locked_by": "ibraheem-111"
+}

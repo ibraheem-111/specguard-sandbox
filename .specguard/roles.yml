@@ -1,0 +1,8 @@
+roles:
+  architect: [ibraheem-111]
+  contributors: [ibraheem-tenexity]
+rules:
+  ".specguard/**":
+    edit: architect
+  "README.md":
+    scope_changes: {approve: architect}
