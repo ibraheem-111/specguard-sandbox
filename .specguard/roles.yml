@@ -1,5 +1,5 @@
 roles:
-  architect: [ibraheem-111]
+  architect: [ibraheem-111, ibraheem-tenexity]
   contributors: [ibraheem-tenexity]
 rules:
   ".specguard/**":
