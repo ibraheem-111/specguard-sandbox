@@ -6,7 +6,7 @@ A web application for storing and sharing personal cooking recipes.
 
 - Create and edit recipes with ingredient lists and step-by-step instructions
 - Tag recipes and search by ingredient, cuisine, or tag
-- Upload photos of finished dishes
+- Upload photos of your finished dishes
 
 ## Getting started
 
