@@ -28,7 +28,7 @@ jobs:
         run: pip install --quiet "git+https://github.com/Sawaiz-zip/spec-guard.git@001-pr-spec-gate"
       - name: Run SpecGuard
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: sk-ant-invalid-key-for-outage-test
           GITHUB_TOKEN: ${{ github.token }}
         run: python -m specguard.ci
 
