@@ -22,3 +22,8 @@ locked project scope in `.specguard/lock.json`.
 
 Enterprise users can sign in through their company identity provider. We will
 support SAML and OIDC, with Okta and Azure AD as the first launch partners.
+
+## Meal-kit delivery
+
+Partner integration with HelloFresh and Blue Apron: order all ingredients for
+any recipe as a meal kit, delivered weekly on a subscription.
